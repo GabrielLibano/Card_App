@@ -14,3 +14,31 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+        drawer: Drawer(
+          child: Column(
+            children: [
+              UserAccountsDrawerHeader(
+                accountEmail: Text("gabriel@hotmail"),
+                accountName: Text("gabriel libano"),
+                currentAccountPicture: CircleAvatar(
+                    radius: 60,
+                    backgroundImage: AssetImage('images/pato.jfif'),
+                ),
+              ),
+             ListTile(
+                leading: Icon(Icons.person),
+               title: Text("Gabriel"),
+             ),
+             ListTile(
+                leading: Icon(Icons.book),
+               title: Text("Repositórios"),
+             ),
+             ListTile(
+                leading: Icon(Icons.star),
+               title: Text("Favoritos"),
+             ),
+            ],
+          ),
+        ),
